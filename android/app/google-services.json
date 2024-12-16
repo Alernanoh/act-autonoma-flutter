@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "860326809902",
+    "firebase_url": "https://flutter-app-798b5-default-rtdb.firebaseio.com",
+    "project_id": "flutter-app-798b5",
+    "storage_bucket": "flutter-app-798b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860326809902:android:6602efbd1fb60878ebeabf",
+        "android_client_info": {
+          "package_name": "com.example.actautonoma"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeJqIqAGu2c7riisvFpdW_bxPIJn8WxYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860326809902:android:2c246874f905b413ebeabf",
+        "android_client_info": {
+          "package_name": "com.example.autonoma01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeJqIqAGu2c7riisvFpdW_bxPIJn8WxYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860326809902:android:b2cb3fa005c6bfbdebeabf",
+        "android_client_info": {
+          "package_name": "com.example.flutterfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeJqIqAGu2c7riisvFpdW_bxPIJn8WxYs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

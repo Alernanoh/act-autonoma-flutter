@@ -6,15 +6,12 @@ class NotasScreen extends StatefulWidget {
 }
 
 class _NotasScreenState extends State<NotasScreen> {
-  // Lista de notas (puedes reemplazarla con datos reales)
   List<Map<String, dynamic>> _notas = [];
 
-  // Controladores para los campos de texto
   final _titleController = TextEditingController();
   final _descriptionController = TextEditingController();
   final _priceController = TextEditingController();
 
-  // Función para agregar una nueva nota
   void _addNota() {
     final title = _titleController.text.trim();
     final description = _descriptionController.text.trim();
@@ -22,7 +19,8 @@ class _NotasScreenState extends State<NotasScreen> {
 
     if (title.isNotEmpty && description.isNotEmpty && price != null) {
       setState(() {
-        _notas.add({'title': title, 'description': description, 'price': price});
+        _notas
+            .add({'title': title, 'description': description, 'price': price});
       });
       _titleController.clear();
       _descriptionController.clear();
@@ -43,10 +41,10 @@ class _NotasScreenState extends State<NotasScreen> {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
-            fontSize: 24, // Tamaño de fuente para el título
+            fontSize: 24,
           ),
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         centerTitle: true,
         elevation: 0,
       ),
@@ -54,7 +52,6 @@ class _NotasScreenState extends State<NotasScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Campos para agregar una nueva nota
             TextField(
               controller: _titleController,
               decoration: InputDecoration(labelText: 'Título de la nota'),
@@ -72,7 +69,7 @@ class _NotasScreenState extends State<NotasScreen> {
             ElevatedButton(
               onPressed: _addNota,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
+                backgroundColor: Colors.purple,
                 foregroundColor: Colors.white,
                 padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 shape: RoundedRectangleBorder(
@@ -107,14 +104,15 @@ class _NotasScreenState extends State<NotasScreen> {
                       ),
                       trailing: Text(
                         '\$${_notas[index]['price'].toStringAsFixed(2)}',
-                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                        style: TextStyle(
+                            fontSize: 16, fontWeight: FontWeight.bold),
                       ),
                       onTap: () {
-                        // Al tocar una nota, ir a la pantalla de detalle
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => NotaDetailScreen(nota: _notas[index]),
+                            builder: (context) =>
+                                NotaDetailScreen(nota: _notas[index]),
                           ),
                         );
                       },
@@ -147,7 +145,7 @@ class NotaDetailScreen extends StatelessWidget {
             fontSize: 24,
           ),
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         centerTitle: true,
         elevation: 0,
       ),

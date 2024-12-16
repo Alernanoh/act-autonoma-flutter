@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
             fontWeight: FontWeight.bold, // Aplica negrita
           ),
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         centerTitle: true,
         elevation: 0,
       ),
@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ElevatedButton(
               onPressed: _login,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green, // Color de fondo del botón
+                backgroundColor: Colors.purple, // Color de fondo del botón
                 foregroundColor: Colors.white, // Color del texto
                 padding: EdgeInsets.symmetric(
                   horizontal: 24, vertical: 12, // Tamaño del botón

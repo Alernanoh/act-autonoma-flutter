@@ -8,12 +8,14 @@ class RegisterScreen extends StatefulWidget {
 class _RegisterScreenState extends State<RegisterScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  final _confirmPasswordController = TextEditingController(); // Controlador para confirmar la contraseña
+  final _confirmPasswordController =
+      TextEditingController(); // Controlador para confirmar la contraseña
 
   void _register() {
     final email = _emailController.text.trim();
     final password = _passwordController.text.trim();
-    final confirmPassword = _confirmPasswordController.text.trim(); // Obtiene la confirmación de la contraseña
+    final confirmPassword = _confirmPasswordController.text
+        .trim(); // Obtiene la confirmación de la contraseña
 
     if (email.isNotEmpty && password.isNotEmpty && confirmPassword.isNotEmpty) {
       if (password == confirmPassword) {
@@ -41,7 +43,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             fontWeight: FontWeight.bold, // Aplica negrita
           ),
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.purple,
         centerTitle: true,
         elevation: 0,
       ),
@@ -73,7 +75,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ElevatedButton(
               onPressed: _register,
               style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green, // Color de fondo del botón
+                backgroundColor: Colors.purple, // Color de fondo del botón
                 foregroundColor: Colors.white, // Color del texto
                 padding: EdgeInsets.symmetric(
                   horizontal: 24, vertical: 12, // Tamaño del botón
